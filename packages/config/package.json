@@ -1,0 +1,12 @@
+{
+  "name": "@gotandajs/config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pine Mizune",
+  "license": "MIT",
+  "dependencies": {
+    "@gotandajs/env": "^1.0.0",
+    "dotenv": "^4.0.0"
+  },
+  "private": true
+}

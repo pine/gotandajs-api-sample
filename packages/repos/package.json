@@ -1,0 +1,12 @@
+{
+  "name": "@gotandajs/repos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pine Mizune",
+  "license": "MIT",
+  "dependencies": {
+    "@gotandajs/models": "^1.0.0",
+    "sequelize": "^4.2.0"
+  },
+  "private": true
+}

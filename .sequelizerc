@@ -1,0 +1,9 @@
+'use strict'
+
+const { join } = require('path')
+
+module.exports = {
+  config: join(__dirname, 'config/sequelize.js'),
+}
+
+// vim: se et ft=javascript ts=4 sw=4 sts=4 :

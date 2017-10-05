@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const { NODE_ENV, PROJECT_DIR } = require('@gotandajs/env')
+const { APP_PORT, APP_HOST } = require('@gotandajs/config')
+
+const { app, routes } = require('..')
+
+// ----------------------------------------------------------------------------
+
+routes(app)
+
+const server = app.listen(APP_PORT, APP_HOST, () => {
+  console.log(`Listening: http://${APP_HOST}:${APP_PORT} (${NODE_ENV})`)
+  if (NODE_ENV === 'production') process.send('ready') // for PM2
+})
+
+process.on('SIGINT', function() {
+  console.log('Received SIGINT; Exit app server')
+  server.close(() => {
+    process.exit(0)
+  })
+})
+
+// vim: se et ts=2 sw=2 sts=2 ft=javascript :
