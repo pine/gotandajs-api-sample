@@ -31,3 +31,7 @@ $ npm i pm2 -g
 $ pm2 reload config/pm2.config.js --env production -x
 $ pm2 logs
 ```
+
+## License
+
+MIT &copy; Pine Mizune
