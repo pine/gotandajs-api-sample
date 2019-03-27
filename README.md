@@ -1,6 +1,8 @@
 gotandajs-api-sample
 --------------------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pine/gotandajs-api-sample.svg)](https://greenkeeper.io/)
+
 Gotanda.js sample API server.
 
 ## Requirements
