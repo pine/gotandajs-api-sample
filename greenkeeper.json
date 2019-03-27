@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/app/package.json",
+        "packages/config/package.json",
+        "packages/env/package.json",
+        "packages/models/package.json",
+        "packages/repos/package.json"
+      ]
+    }
+  }
+}
